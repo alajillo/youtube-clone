@@ -1,0 +1,18 @@
+@include media(0, 600px) {
+    .header__center {
+        display: none;
+        * {
+            display: none;
+        }
+    }
+}
+
+@include media(0, 1200px) {
+    aside {
+        width: auto;
+        * {
+            font-size: 2rem;
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,100 @@
+main {
+    flex-shrink: 1;
+    background-color: $background-color-darker;
+    padding: 8px 32px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    grid-auto-rows: 298px;
+    gap: 10px;
+    justify-content: center;
+
+    > *:nth-child(1) {
+        grid-column-start: 2;
+    }
+
+    .text {
+        background-color: $background-color-darker;
+        color: white;
+    }
+
+    .main__play-list {
+        @include flex(column);
+        align-items: stretch;
+    }
+
+    .main__play-list__information {
+        padding: 10px 2px;
+        @include flex(row);
+        flex-grow: 1;
+    }
+
+    .chanel-name {
+        text-align: left;
+    }
+
+    .meta-info {
+        text-align: left;
+    }
+
+    .main_play-list__information__logo {
+        align-self: flex-start;
+        img {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+        }
+        margin-right: 10px;
+    }
+
+    .main__play-list__information__text {
+        flex-grow: 1;
+        padding-left: 10px;
+        @include flex(column);
+        align-self: flex-start;
+        align-items: flex-start;
+    }
+
+    .main__play-list__video-container {
+        position: relative;
+
+        i {
+            display: none;
+        }
+
+        &:hover {
+            i {
+                display: block;
+            }
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .text {
+            border-radius: 1px;
+            position: absolute;
+        }
+
+        .play-time {
+            padding: 5px;
+            right: 5px;
+            bottom: 5px;
+        }
+
+        .fa-clock {
+            padding: 5px;
+            font-size: 1.5rem;
+            right: 5px;
+            top: 5px;
+        }
+
+        .fa-file-video {
+            padding: 5px;
+            font-size: 1.5rem;
+            right: 5px;
+            top: 50px;
+        }
+    }
+}

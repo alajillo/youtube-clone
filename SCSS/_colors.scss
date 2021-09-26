@@ -1,0 +1,13 @@
+@use "sass:color";
+
+$background-color: rgb(33, 33, 33);
+$background-color-hover: color.adjust($background-color, $lightness: 30%);
+$background-color-opacity: color.adjust($background-color, $alpha: -0.4);
+$keyword-color: rgb(55, 55, 55);
+$nav-border-color: $keyword-color;
+$keyword-border-color: rgb(75, 75, 75);
+$keyword-color-hover: color.adjust($keyword-color, $lightness: 10%);
+$logo-language-color: rgb(160, 160, 160);
+$aside-list-color: color.adjust($logo-language-color, $lightness: 20%);
+$search-text-color: rgb(200, 200, 200);
+$background-color-darker: rgb(24, 24, 24);

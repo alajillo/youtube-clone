@@ -1,0 +1,15 @@
+@mixin flex($direction: row) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: space-between;
+    align-items: center;
+    > * {
+        flex: 0 0 auto;
+    }
+}
+
+@mixin media($min, $max) {
+    @media (max-width: $max) and (min-width: $min) {
+        @content;
+    }
+} ;

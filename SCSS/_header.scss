@@ -1,0 +1,109 @@
+header {
+    width: 100%;
+    height: 56px;
+    @include flex(row);
+
+    > * {
+        @include flex(row);
+    }
+
+    .header__left {
+        max-width: 162px;
+    }
+
+    .header__icon {
+        color: white;
+        padding: 0 10px;
+    }
+
+    .youtube-logo {
+        @include flex(row);
+
+        .language {
+            padding-top: 5px;
+            font-size: 5px;
+            align-self: flex-start;
+            color: $logo-language-color;
+        }
+    }
+
+    .header__center {
+        @include flex(row);
+        flex-shrink: 1;
+        .header__center__search-container {
+            .fa-keyboard {
+                color: white;
+                font-size: 1rem;
+            }
+            @include flex(row);
+        }
+
+        .fa-search {
+            background-color: $keyword-color;
+            color: white;
+            font-size: 27px;
+            padding: 3px;
+            margin-right: 15px;
+        }
+
+        .header__center__mic-container {
+            padding: 10px;
+            border-radius: 50%;
+            background-color: $background-color-darker;
+
+            * {
+                color: white;
+                font-size: 20px;
+            }
+        }
+
+        .header__center__input-container {
+            padding: 3px;
+            @include flex(row);
+            background-color: $background-color-darker;
+            flex-shrink: 1;
+        }
+    }
+
+    .header__center__input {
+        width: max(500px);
+        font-size: 1rem;
+        padding: 5px;
+        color: $search-text-color;
+        background-color: $background-color-darker;
+        border: none;
+        outline: none;
+        flex-shrink: 1;
+    }
+
+    .header__right {
+        margin-right: 10px;
+        @include flex(row);
+
+        .user-profile {
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+        }
+
+        > * {
+            font-size: 1.5rem;
+            margin: 0 15px;
+            color: white;
+        }
+
+        .fa-bell {
+            position: relative;
+
+            .alarm {
+                font-size: 0.2rem;
+                font-weight: bold;
+                padding: 2px;
+                position: absolute;
+                left: 10px;
+                border-radius: 50%;
+                background-color: red;
+            }
+        }
+    }
+}

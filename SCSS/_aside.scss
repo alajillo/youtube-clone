@@ -1,0 +1,45 @@
+aside {
+    width: 240px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    @include flex(column);
+    align-items: flex-start;
+
+    .aside__lists {
+        width: 100%;
+        @include flex(column);
+        border-top: 2px solid $keyword-color;
+        padding: 10px 0;
+
+        &:nth-child(1) {
+            margin-top: 10px;
+            border-top: none;
+        }
+
+        .aside__lists__name {
+            width: 100%;
+            color: $logo-language-color;
+            text-align: left;
+            padding: 10px 15px;
+        }
+
+        .aside__lists__list {
+            width: 100%;
+            padding: 10px 15px;
+            @include flex(row);
+            justify-content: flex-start;
+
+            &:hover {
+                background-color: $keyword-color-hover;
+            }
+
+            * {
+                color: $aside-list-color;
+
+                &:nth-child(1) {
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+}

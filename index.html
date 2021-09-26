@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>유튜브 클론</title>
+        <script
+            src="https://kit.fontawesome.com/bf0e89a376.js"
+            crossorigin="anonymous"
+        ></script>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+        />
+        <link rel="stylesheet" href="CSS/index.css" />
+    </head>
+    <body>
+        <div class="flex-column">
+            <header>
+                <div class="header__left">
+                    <i class="fas fa-bars header__icon cursor-point"></i>
+                    <div class="youtube-logo">
+                        <img
+                            src="./youtube-image/youtube-logo.png"
+                            alt="youtube-logo"
+                            class="cursor-point"
+                        />
+                        <div class="language">KR</div>
+                    </div>
+                </div>
+                <div class="header__center">
+                    <div class="header__center__search-container">
+                        <div class="header__center__input-container">
+                            <input
+                                type="text"
+                                class="header__center__input"
+                                placeholder="검색"
+                            />
+                            <i class="fas fa-keyboard"></i>
+                        </div>
+                        <i class="fas fa-search"></i>
+                    </div>
+
+                    <div class="header__center__mic-container">
+                        <i class="fas fa-microphone"></i>
+                    </div>
+                </div>
+                <div class="header__right">
+                    <i class="fas fa-video cursor-point"></i>
+                    <i class="fas fa-th cursor-point"></i>
+                    <i class="far fa-bell cursor-point">
+                        <span class="alarm">9+</span>
+                    </i>
+                    <img
+                        src="./youtube-image/unnamed.jpeg"
+                        alt="user-profile"
+                        class="user-profile cursor-point"
+                    />
+                </div>
+            </header>
+            <div class="flex-row side-main-container">
+                <aside>
+                    <ul class="aside__lists">
+                        <div class="aside__lists__list cursor-point">
+                            <i class="fas fa-home"></i>
+                            <span>홈</span>
+                        </div>
+                        <div class="aside__lists__list cursor-point">
+                            <i class="far fa-compass"></i>
+                            <span>탐색</span>
+                        </div>
+                        <div class="aside__lists__list cursor-point">
+                            <i class="fas fa-envelope-open-text"></i>
+                            <span>구독</span>
+                        </div>
+                    </ul>
+                    <ul class="aside__lists">
+                        <div class="aside__lists__list cursor-point">
+                            <i class="fas fa-list-alt"></i>
+                            <span>보관함</span>
+                        </div>
+                        <div class="aside__lists__list cursor-point">
+                            <i class="fas fa-history"></i>
+                            <span>시청기록</span>
+                        </div>
+                        <div class="aside__lists__list cursor-point">
+                            <i class="far fa-play-circle"></i>
+                            <span>내 동영상</span>
+                        </div>
+                        <div class="aside__lists__list cursor-point">
+                            <i class="fas fa-film"></i>
+                            <span>내 영화</span>
+                        </div>
+                        <div class="aside__lists__list cursor-point">
+                            <i class="far fa-clock"></i>
+                            <span>나중에 볼 동영상</span>
+                        </div>
+                        <div class="aside__lists__list cursor-point">
+                            <i class="fas fa-chevron-down"></i>
+                            <span>더보기</span>
+                        </div>
+                    </ul>
+                    <ul class="aside__lists">
+                        <div class="aside__lists__name">구독</div>
+                        <div class="aside__lists__list cursor-point">
+                            <img
+                                src="./youtube-image/channels4_profile (1).jpeg"
+                                alt="구독한채널"
+                                class="chanel-circle"
+                            />
+                            <span>김시선</span>
+                        </div>
+                        <div class="aside__lists__list cursor-point">
+                            <img
+                                src="./youtube-image/channels4_profile (2).jpeg"
+                                alt="구독한채널"
+                                class="chanel-circle"
+                            />
+                            <span>닥신TV</span>
+                        </div>
+                        <div class="aside__lists__list cursor-point">
+                            <img
+                                src="./youtube-image/channels4_profile (3).jpeg"
+                                alt="구독한채널"
+                                class="chanel-circle"
+                            />
+                            <span>효정[PLAYLIST]</span>
+                        </div>
+                        <div class="aside__lists__list cursor-point">
+                            <img
+                                src="./youtube-image/channels4_profile (4).jpeg"
+                                alt="구독한채널"
+                                class="chanel-circle"
+                            />
+                            <span>빨간도깨비</span>
+                        </div>
+                        <div class="aside__lists__list cursor-point">
+                            <img
+                                src="./youtube-image/channels4_profile (5).jpeg"
+                                alt="구독한채널"
+                                class="chanel-circle"
+                            />
+                            <span>딩고 뮤직</span>
+                        </div>
+                        <div class="aside__lists__list cursor-point">
+                            <img
+                                src="./youtube-image/channels4_profile (6).jpeg"
+                                alt="구독한채널"
+                                class="chanel-circle"
+                            />
+                            <span>판교 뚜벅초</span>
+                        </div>
+                        <div class="aside__lists__list cursor-point">
+                            <img
+                                src="./youtube-image/channels4_profile (7).jpeg"
+                                alt="구독한채널"
+                                class="chanel-circle"
+                            />
+                            <span>효기심</span>
+                        </div>
+                        <div class="aside__lists__list cursor-point">
+                            <img
+                                src="./youtube-image/channels4_profile (8).jpeg"
+                                alt="구독한채널"
+                                class="chanel-circle"
+                            />
+                            <span>1분코딩</span>
+                        </div>
+                        <div class="aside__lists__list cursor-point">
+                            <i class="fas fa-chevron-down"></i>
+                            <span>81개 더보기</span>
+                        </div>
+                    </ul>
+                    <ul class="aside__lists">
+                        <div class="aside__lists__name">YOUTUBE 더보기</div>
+                        <div class="aside__lists__list">
+                            <i class="fas fa-home"></i>
+                            <span>YouTube Premium</span>
+                        </div>
+                        <div class="aside__lists__list cursor-point">
+                            <i class="far fa-compass"></i>
+                            <span>영화</span>
+                        </div>
+                        <div class="aside__lists__list cursor-point">
+                            <i class="fas fa-envelope-open-text"></i>
+                            <span>게임</span>
+                        </div>
+                        <div class="aside__lists__list cursor-point">
+                            <i class="fas fa-envelope-open-text"></i>
+                            <span>실시간</span>
+                        </div>
+                        <div class="aside__lists__list cursor-point">
+                            <i class="fas fa-envelope-open-text"></i>
+                            <span>학습</span>
+                        </div>
+                        <div class="aside__lists__list cursor-point">
+                            <i class="fas fa-envelope-open-text"></i>
+                            <span>스포츠</span>
+                        </div>
+                    </ul>
+                    <ul class="aside__lists">
+                        <div class="aside__lists__list cursor-point">
+                            <i class="fas fa-home"></i>
+                            <span>설정</span>
+                        </div>
+                        <div class="aside__lists__list cursor-point">
+                            <i class="far fa-compass"></i>
+                            <span>신고기록</span>
+                        </div>
+                        <div class="aside__lists__list cursor-point">
+                            <i class="fas fa-envelope-open-text"></i>
+                            <span>고객센터</span>
+                        </div>
+                        <div class="aside__lists__list cursor-point">
+                            <i class="fas fa-envelope-open-text"></i>
+                            <span>의견 보내기</span>
+                        </div>
+                    </ul>
+                </aside>
+                <div class="main-container">
+                    <nav>
+                        <ul class="nav-container">
+                            <li class="nav__recomand-keywords cursor-point">
+                                전체
+                            </li>
+                            <li class="nav__recomand-keywords cursor-point">
+                                음악
+                            </li>
+                            <li class="nav__recomand-keywords cursor-point">
+                                믹스
+                            </li>
+                            <li class="nav__recomand-keywords cursor-point">
+                                랩
+                            </li>
+                            <li class="nav__recomand-keywords cursor-point">
+                                만화 영화
+                            </li>
+                            <li class="nav__recomand-keywords cursor-point">
+                                관광
+                            </li>
+                            <li class="nav__recomand-keywords cursor-point">
+                                실시간
+                            </li>
+                            <li class="nav__recomand-keywords cursor-point">
+                                피트니스
+                            </li>
+                            <li class="nav__recomand-keywords cursor-point">
+                                사이클링
+                            </li>
+                            <li class="nav__recomand-keywords cursor-point">
+                                요리 프로그램
+                            </li>
+                            <li class="nav__recomand-keywords cursor-point">
+                                반려동물
+                            </li>
+                            <li class="nav__recomand-keywords cursor-point">
+                                최근에 업로드 된 영상
+                            </li>
+                            <li class="nav__recomand-keywords cursor-point">
+                                감상한 동영상
+                            </li>
+                            <li class="nav__recomand-keywords cursor-point">
+                                새로운 맞춤 동영상
+                            </li>
+                            <li class="nav__recomand-keywords cursor-point">
+                                축구
+                            </li>
+                            <li class="nav__recomand-keywords cursor-point">
+                                액션 어드벤처 게임
+                            </li>
+                        </ul>
+                    </nav>
+                    <main>
+                        <div class="main__play-list">
+                            <div class="main__play-list__video-container">
+                                <img
+                                    src="./youtube-image/hq720 (1).webp"
+                                    alt="video"
+                                    class="video"
+                                />
+                                <span class="play-time text">12:20</span>
+                                <div class="add-play-list">
+                                    <i class="far fa-clock text"></i>
+                                </div>
+                                <div class="watch-later">
+                                    <i class="far fa-file-video text"></i>
+                                </div>
+                            </div>
+                            <div class="main__play-list__information">
+                                <div class="main_play-list__information__logo">
+                                    <img
+                                        class="circle"
+                                        src="./youtube-image/channels4_profile (1).jpeg"
+                                        alt="구독채널"
+                                    />
+                                </div>
+                                <div class="main__play-list__information__text">
+                                    <div class="video-title text">
+                                        영상 제목
+                                    </div>
+                                    <div class="chanel-name text">채널명</div>
+                                    <div class="meta-info text">
+                                        조회수 1만회 ∙ 1주 전
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main__play-list">
+                            <div class="main__play-list__video-container">
+                                <img
+                                    src="./youtube-image/hq720 (2).webp"
+                                    alt="video"
+                                    class="video"
+                                />
+                                <span class="play-time text">12:20</span>
+                                <div class="add-play-list">
+                                    <i class="far fa-clock text"></i>
+                                </div>
+                                <div class="watch-later">
+                                    <i class="far fa-file-video text"></i>
+                                </div>
+                            </div>
+                            <div class="main__play-list__information">
+                                <div class="main_play-list__information__logo">
+                                    <img
+                                        class="circle"
+                                        src="./youtube-image/channels4_profile (2).jpeg"
+                                        alt="구독채널"
+                                    />
+                                </div>
+                                <div class="main__play-list__information__text">
+                                    <div class="video-title text">
+                                        영상 제목
+                                    </div>
+                                    <div class="chanel-name text">채널명</div>
+                                    <div class="meta-info text">
+                                        조회수 1만회 ∙ 1주 전
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main__play-list">
+                            <div class="main__play-list__video-container">
+                                <img
+                                    src="./youtube-image/hq720 (3).webp"
+                                    alt="video"
+                                    class="video"
+                                />
+                                <span class="play-time text">12:20</span>
+                                <div class="add-play-list">
+                                    <i class="far fa-clock text"></i>
+                                </div>
+                                <div class="watch-later">
+                                    <i class="far fa-file-video text"></i>
+                                </div>
+                            </div>
+                            <div class="main__play-list__information">
+                                <div class="main_play-list__information__logo">
+                                    <img
+                                        class="circle"
+                                        src="./youtube-image/channels4_profile (3).jpeg"
+                                        alt="구독채널"
+                                    />
+                                </div>
+                                <div class="main__play-list__information__text">
+                                    <div class="video-title text">
+                                        영상 제목
+                                    </div>
+                                    <div class="chanel-name text">채널명</div>
+                                    <div class="meta-info text">
+                                        조회수 1만회 ∙ 1주 전
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main__play-list">
+                            <div class="main__play-list__video-container">
+                                <img
+                                    src="./youtube-image/hq720 (4).webp"
+                                    alt="video"
+                                    class="video"
+                                />
+                                <span class="play-time text">12:20</span>
+                                <div class="add-play-list">
+                                    <i class="far fa-clock text"></i>
+                                </div>
+                                <div class="watch-later">
+                                    <i class="far fa-file-video text"></i>
+                                </div>
+                            </div>
+                            <div class="main__play-list__information">
+                                <div class="main_play-list__information__logo">
+                                    <img
+                                        class="circle"
+                                        src="./youtube-image/channels4_profile (4).jpeg"
+                                        alt="구독채널"
+                                    />
+                                </div>
+                                <div class="main__play-list__information__text">
+                                    <div class="video-title text">
+                                        영상 제목
+                                    </div>
+                                    <div class="chanel-name text">채널명</div>
+                                    <div class="meta-info text">
+                                        조회수 1만회 ∙ 1주 전
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main__play-list">
+                            <div class="main__play-list__video-container">
+                                <img
+                                    src="./youtube-image/hq720 (5).webp"
+                                    alt="video"
+                                    class="video"
+                                />
+                                <span class="play-time text">12:20</span>
+                                <div class="add-play-list">
+                                    <i class="far fa-clock text"></i>
+                                </div>
+                                <div class="watch-later">
+                                    <i class="far fa-file-video text"></i>
+                                </div>
+                            </div>
+                            <div class="main__play-list__information">
+                                <div class="main_play-list__information__logo">
+                                    <img
+                                        class="circle"
+                                        src="./youtube-image/channels4_profile (5).jpeg"
+                                        alt="구독채널"
+                                    />
+                                </div>
+                                <div class="main__play-list__information__text">
+                                    <div class="video-title text">
+                                        영상 제목
+                                    </div>
+                                    <div class="chanel-name text">채널명</div>
+                                    <div class="meta-info text">
+                                        조회수 1만회 ∙ 1주 전
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main__play-list">
+                            <div class="main__play-list__video-container">
+                                <img
+                                    src="./youtube-image/hq720 (6).webp"
+                                    alt="video"
+                                    class="video"
+                                />
+                                <span class="play-time text">12:20</span>
+                                <div class="add-play-list">
+                                    <i class="far fa-clock text"></i>
+                                </div>
+                                <div class="watch-later">
+                                    <i class="far fa-file-video text"></i>
+                                </div>
+                            </div>
+                            <div class="main__play-list__information">
+                                <div class="main_play-list__information__logo">
+                                    <img
+                                        class="circle"
+                                        src="./youtube-image/channels4_profile (6).jpeg"
+                                        alt="구독채널"
+                                    />
+                                </div>
+                                <div class="main__play-list__information__text">
+                                    <div class="video-title text">
+                                        영상 제목
+                                    </div>
+                                    <div class="chanel-name text">채널명</div>
+                                    <div class="meta-info text">
+                                        조회수 1만회 ∙ 1주 전
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main__play-list">
+                            <div class="main__play-list__video-container">
+                                <img
+                                    src="./youtube-image/hq720 (7).webp"
+                                    alt="video"
+                                    class="video"
+                                />
+                                <span class="play-time text">12:20</span>
+                                <div class="add-play-list">
+                                    <i class="far fa-clock text"></i>
+                                </div>
+                                <div class="watch-later">
+                                    <i class="far fa-file-video text"></i>
+                                </div>
+                            </div>
+                            <div class="main__play-list__information">
+                                <div class="main_play-list__information__logo">
+                                    <img
+                                        class="circle"
+                                        src="./youtube-image/channels4_profile (7).jpeg"
+                                        alt="구독채널"
+                                    />
+                                </div>
+                                <div class="main__play-list__information__text">
+                                    <div class="video-title text">
+                                        영상 제목
+                                    </div>
+                                    <div class="chanel-name text">채널명</div>
+                                    <div class="meta-info text">
+                                        조회수 1만회 ∙ 1주 전
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main__play-list">
+                            <div class="main__play-list__video-container">
+                                <img
+                                    src="./youtube-image/hq720 (8).webp"
+                                    alt="video"
+                                    class="video"
+                                />
+                                <span class="play-time text">12:20</span>
+                                <div class="add-play-list">
+                                    <i class="far fa-clock text"></i>
+                                </div>
+                                <div class="watch-later">
+                                    <i class="far fa-file-video text"></i>
+                                </div>
+                            </div>
+                            <div class="main__play-list__information">
+                                <div class="main_play-list__information__logo">
+                                    <img
+                                        class="circle"
+                                        src="./youtube-image/channels4_profile (8).jpeg"
+                                        alt="구독채널"
+                                    />
+                                </div>
+                                <div class="main__play-list__information__text">
+                                    <div class="video-title text">
+                                        영상 제목
+                                    </div>
+                                    <div class="chanel-name text">채널명</div>
+                                    <div class="meta-info text">
+                                        조회수 1만회 ∙ 1주 전
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main__play-list">
+                            <div class="main__play-list__video-container">
+                                <img
+                                    src="./youtube-image/hq720 (9).webp"
+                                    alt="video"
+                                    class="video"
+                                />
+                                <span class="play-time text">12:20</span>
+                                <div class="add-play-list">
+                                    <i class="far fa-clock text"></i>
+                                </div>
+                                <div class="watch-later">
+                                    <i class="far fa-file-video text"></i>
+                                </div>
+                            </div>
+                            <div class="main__play-list__information">
+                                <div class="main_play-list__information__logo">
+                                    <img
+                                        class="circle"
+                                        src="./youtube-image/channels4_profile (9).jpeg"
+                                        alt="구독채널"
+                                    />
+                                </div>
+                                <div class="main__play-list__information__text">
+                                    <div class="video-title text">
+                                        영상 제목
+                                    </div>
+                                    <div class="chanel-name text">채널명</div>
+                                    <div class="meta-info text">
+                                        조회수 1만회 ∙ 1주 전
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main__play-list">
+                            <div class="main__play-list__video-container">
+                                <img
+                                    src="./youtube-image/hq720 (10).webp"
+                                    alt="video"
+                                    class="video"
+                                />
+                                <span class="play-time text">12:20</span>
+                                <div class="add-play-list">
+                                    <i class="far fa-clock text"></i>
+                                </div>
+                                <div class="watch-later">
+                                    <i class="far fa-file-video text"></i>
+                                </div>
+                            </div>
+                            <div class="main__play-list__information">
+                                <div class="main_play-list__information__logo">
+                                    <img
+                                        class="circle"
+                                        src="./youtube-image/channels4_profile (10).jpeg"
+                                        alt="구독채널"
+                                    />
+                                </div>
+                                <div class="main__play-list__information__text">
+                                    <div class="video-title text">
+                                        영상 제목
+                                    </div>
+                                    <div class="chanel-name text">채널명</div>
+                                    <div class="meta-info text">
+                                        조회수 1만회 ∙ 1주 전
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main__play-list">
+                            <div class="main__play-list__video-container">
+                                <img
+                                    src="./youtube-image/hq720 (11).webp"
+                                    alt="video"
+                                    class="video"
+                                />
+                                <span class="play-time text">12:20</span>
+                                <div class="add-play-list">
+                                    <i class="far fa-clock text"></i>
+                                </div>
+                                <div class="watch-later">
+                                    <i class="far fa-file-video text"></i>
+                                </div>
+                            </div>
+                            <div class="main__play-list__information">
+                                <div class="main_play-list__information__logo">
+                                    <img
+                                        class="circle"
+                                        src="./youtube-image/channels4_profile (11).jpeg"
+                                        alt="구독채널"
+                                    />
+                                </div>
+                                <div class="main__play-list__information__text">
+                                    <div class="video-title text">
+                                        영상 제목
+                                    </div>
+                                    <div class="chanel-name text">채널명</div>
+                                    <div class="meta-info text">
+                                        조회수 1만회 ∙ 1주 전
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main__play-list">
+                            <div class="main__play-list__video-container">
+                                <img
+                                    src="./youtube-image/hq720 (12).webp"
+                                    alt="video"
+                                    class="video"
+                                />
+                                <span class="play-time text">12:20</span>
+                                <div class="add-play-list">
+                                    <i class="far fa-clock text"></i>
+                                </div>
+                                <div class="watch-later">
+                                    <i class="far fa-file-video text"></i>
+                                </div>
+                            </div>
+                            <div class="main__play-list__information">
+                                <div class="main_play-list__information__logo">
+                                    <img
+                                        class="circle"
+                                        src="./youtube-image/channels4_profile (12).jpeg"
+                                        alt="구독채널"
+                                    />
+                                </div>
+                                <div class="main__play-list__information__text">
+                                    <div class="video-title text">
+                                        영상 제목
+                                    </div>
+                                    <div class="chanel-name text">채널명</div>
+                                    <div class="meta-info text">
+                                        조회수 1만회 ∙ 1주 전
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main__play-list">
+                            <div class="main__play-list__video-container">
+                                <img
+                                    src="./youtube-image/hq720 (13).webp"
+                                    alt="video"
+                                    class="video"
+                                />
+                                <span class="play-time text">12:20</span>
+                                <div class="add-play-list">
+                                    <i class="far fa-clock text"></i>
+                                </div>
+                                <div class="watch-later">
+                                    <i class="far fa-file-video text"></i>
+                                </div>
+                            </div>
+                            <div class="main__play-list__information">
+                                <div class="main_play-list__information__logo">
+                                    <img
+                                        class="circle"
+                                        src="./youtube-image/channels4_profile (13).jpeg"
+                                        alt="구독채널"
+                                    />
+                                </div>
+                                <div class="main__play-list__information__text">
+                                    <div class="video-title text">
+                                        영상 제목
+                                    </div>
+                                    <div class="chanel-name text">채널명</div>
+                                    <div class="meta-info text">
+                                        조회수 1만회 ∙ 1주 전
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main__play-list">
+                            <div class="main__play-list__video-container">
+                                <img
+                                    src="./youtube-image/hq720 (14).webp"
+                                    alt="video"
+                                    class="video"
+                                />
+                                <span class="play-time text">12:20</span>
+                                <div class="add-play-list">
+                                    <i class="far fa-clock text"></i>
+                                </div>
+                                <div class="watch-later">
+                                    <i class="far fa-file-video text"></i>
+                                </div>
+                            </div>
+                            <div class="main__play-list__information">
+                                <div class="main_play-list__information__logo">
+                                    <img
+                                        class="circle"
+                                        src="./youtube-image/channels4_profile (4).jpeg"
+                                        alt="구독채널"
+                                    />
+                                </div>
+                                <div class="main__play-list__information__text">
+                                    <div class="video-title text">
+                                        영상 제목
+                                    </div>
+                                    <div class="chanel-name text">채널명</div>
+                                    <div class="meta-info text">
+                                        조회수 1만회 ∙ 1주 전
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main__play-list">
+                            <div class="main__play-list__video-container">
+                                <img
+                                    src="./youtube-image/hq720 (15).webp"
+                                    alt="video"
+                                    class="video"
+                                />
+                                <span class="play-time text">12:20</span>
+                                <div class="add-play-list">
+                                    <i class="far fa-clock text"></i>
+                                </div>
+                                <div class="watch-later">
+                                    <i class="far fa-file-video text"></i>
+                                </div>
+                            </div>
+                            <div class="main__play-list__information">
+                                <div class="main_play-list__information__logo">
+                                    <img
+                                        class="circle"
+                                        src="./youtube-image/channels4_profile (6).jpeg"
+                                        alt="구독채널"
+                                    />
+                                </div>
+                                <div class="main__play-list__information__text">
+                                    <div class="video-title text">
+                                        영상 제목
+                                    </div>
+                                    <div class="chanel-name text">채널명</div>
+                                    <div class="meta-info text">
+                                        조회수 1만회 ∙ 1주 전
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main__play-list">
+                            <div class="main__play-list__video-container">
+                                <img
+                                    src="./youtube-image/hq720 (5).webp"
+                                    alt="video"
+                                    class="video"
+                                />
+                                <span class="play-time text">12:20</span>
+                                <div class="add-play-list">
+                                    <i class="far fa-clock text"></i>
+                                </div>
+                                <div class="watch-later">
+                                    <i class="far fa-file-video text"></i>
+                                </div>
+                            </div>
+                            <div class="main__play-list__information">
+                                <div class="main_play-list__information__logo">
+                                    <img
+                                        class="circle"
+                                        src="./youtube-image/channels4_profile (1).jpeg"
+                                        alt="구독채널"
+                                    />
+                                </div>
+                                <div class="main__play-list__information__text">
+                                    <div class="video-title text">
+                                        영상 제목
+                                    </div>
+                                    <div class="chanel-name text">채널명</div>
+                                    <div class="meta-info text">
+                                        조회수 1만회 ∙ 1주 전
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </main>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

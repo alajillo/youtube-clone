@@ -1,0 +1,47 @@
+@import "./colors";
+@import "./mixins";
+@import "./header";
+@import "./aside";
+@import "./nav";
+@import "./play-list";
+* {
+    box-sizing: border-box;
+}
+
+.cursor-point {
+    cursor: pointer;
+}
+
+body {
+    width: 100%;
+    padding-left: 20px;
+    background-color: $background-color;
+}
+
+.flex-column {
+    @include flex(column);
+}
+
+.flex-row {
+    width: 100%;
+    @include flex(row);
+    align-items: flex-start;
+}
+
+.chanel-circle {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+}
+
+.main-container {
+    flex-grow: 1;
+    flex-shrink: 1;
+    overflow-x: hidden;
+}
+
+main {
+    background-color: $background-color-darker;
+}
+
+@import "./media";
